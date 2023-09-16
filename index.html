@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Custom styles -->
+  <!-- Custom styles-->
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -23,6 +23,15 @@
     <div class="header-container container">
       <nav class="header-nav">
         <a class="header-logo link" href="./index.html">Web<span class="header-logo-accent">Studio</span></a>
+
+        <!-- btn mob only -->
+        <button class="header-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
+          aria-label="Mobile menu open button">
+          <svg class="header-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+
         <ul class="header-nav-list list">
           <li class="header-nav-item">
             <a class="nav-item-link link current" href="./index.html">Studio</a>
@@ -50,7 +59,7 @@
   </header>
 
   <main>
-    <!-- SECTION HERO -->
+    <!-- SECTION I -HERO -->
     <section class="hero">
       <div class="hero-container container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -64,7 +73,7 @@
         <h2 class="visually-hidden">Features</h2>
         <ul class="features-list list">
           <li class="features-item">
-            <div class="featues-icons-thumb">
+            <div class="features-icons-thumb">
               <svg class="features-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
@@ -76,7 +85,7 @@
             </p>
           </li>
           <li class="features-item">
-            <div class="featues-icons-thumb">
+            <div class="features-icons-thumb">
               <svg class="features-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
@@ -88,7 +97,7 @@
             </p>
           </li>
           <li class="features-item">
-            <div class="featues-icons-thumb">
+            <div class="features-icons-thumb">
               <svg class="features-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
@@ -100,7 +109,7 @@
             </p>
           </li>
           <li class="features-item">
-            <div class="featues-icons-thumb">
+            <div class="features-icons-thumb">
               <svg class="features-icon" width="64" height="64">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
@@ -292,7 +301,7 @@
     </section>
 
     <!-- SECTION V -->
-    <section class="customers-section">
+    <section class="customers">
       <div class="container">
         <h2 class="customers-title section-title">Customers</h2>
         <ul class="customers-list list">
@@ -465,6 +474,67 @@
     </div>
   </div>
 
+  <!-- Mobile Menu -->
+
+  <div class="mobile-backdrop js-menu-container" id="mobile-menu">
+    <div class="mobile-container">
+      <button class="mobile-menu-btn js-close-menu" aria-label="Mobile menu close button" aria-controls="mobile-menu">
+        <svg class="mobile-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp-2"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-refs list">
+        <li class="mobile-menu-refs-item">
+          <a href="./index.html" class="mobile-menu-refs-link link">Studio</a>
+        </li>
+        <li class="mobile-menu-refs-item">
+          <a href="./portfolio.html" class="mobile-menu-refs-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-refs-item">
+          <a href="" class="mobile-menu-refs-link link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-contacts-list list">
+        <li>
+          <a class="mobile-menu-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a class="mobile-menu-email-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-socials list">
+        <li class="mobile-menu-socials-icons">
+          <a class="mobile-menu-socials-link link" href="https://instagram.com" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram link"><svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg></a>
+        </li>
+        <li class="mobile-menu-socials-icons">
+          <a class="mobile-menu-socials-link link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Twitter link"><svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg></a>
+        </li>
+        <li class="mobile-menu-socials-icons">
+          <a class="mobile-menu-socials-link link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook link"><svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg></a>
+        </li>
+        <li class="mobile-menu-socials-icons">
+          <a class="mobile-menu-socials-link link" href="https://www.linkedin.com/company/linkedin" target="_blank"
+            rel="noopener noreferrer" aria-label="Linkedin link"><svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
