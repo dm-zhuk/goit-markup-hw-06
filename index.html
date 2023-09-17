@@ -130,13 +130,16 @@
         <h2 class="what-are-we-title section-title">What are we doing</h2>
         <ul class="what-are-we-list list">
           <li class="what-are-we-item">
-            <img src="./images/img_1.jpg" alt="on Mac" width="360" height="300" />
+            <img srcset="./images/img_1.jpg 1x, ./images/img_1@2x.jpg 2x" src="./images/img_1.jpg" alt="on Mac"
+              width="360" height="300" loading="lazy" />
           </li>
           <li class="what-are-we-item">
-            <img src="./images/img_2.jpg" alt="on iPhone" width="360" height="300" />
+            <img srcset="./images/img_2.jpg 1x, ./images/img_2@2x.jpg 2x" src="./images/img_2.jpg" alt="on iPhone"
+              width="360" height="300" loading="lazy" />
           </li>
           <li class="what-are-we-item">
-            <img src="./images/img_3.jpg" alt="on mobile&laptop" width="360" height="300" />
+            <img srcset="./images/img_3.jpg 1x, ./images/img_3@2x.jpg 2x" src="./images/img_3.jpg"
+              alt="on mobile&laptop" width="360" height="300" loading="lazy" />
           </li>
         </ul>
       </div>
@@ -148,7 +151,8 @@
         <h2 class="teamcards-title section-title">Our Team</h2>
         <ul class="teamcards-content-list list">
           <li class="teamcards-content-item">
-            <img class="teamcards-img" src="./images/img_tc1.jpg" alt="MG picture" width="264" height="260" />
+            <img class="teamcards-img" srcset="./images/img_tc1.jpg 1x, ./images/img_tc1@2x.jpg 2x"
+              src="./images/img_tc1.jpg" alt="MG picture" width="264" height="260" loading="lazy" />
             <div class="teamcards-content-block">
               <h3 class="teamcards-content-title">Mark Guerrero</h3>
               <p class="teamcards-content-text">Product Designer</p>
@@ -186,7 +190,8 @@
             </div>
           </li>
           <li class="teamcards-content-item">
-            <img class="teamcards-img" src="./images/img_tc2.jpg" alt="TF picture" width="264" height="260" />
+            <img class="teamcards-img" srcset="./images/img_tc2.jpg 1x, ./images/img_tc2@2x.jpg 2x"
+              src="./images/img_tc2.jpg" alt="TF picture" width="264" height="260" loading="lazy" />
             <div class="teamcards-content-block">
               <h3 class="teamcards-content-title">Tom Ford</h3>
               <p class="teamcards-content-text">Frontend Developer</p>
@@ -223,7 +228,8 @@
             </div>
           </li>
           <li class="teamcards-content-item">
-            <img class="teamcards-img" src="./images/img_tc3.jpg" alt="CG picture" width="264" height="260" />
+            <img class="teamcards-img" srcset="./images/img_tc3.jpg 1x, ./images/img_tc3@2x.jpg 2x"
+              src="./images/img_tc3.jpg" alt="CG picture" width="264" height="260" loading="lazy" />
             <div class="teamcards-content-block">
               <h3 class="teamcards-content-title">Camila Garcia</h3>
               <p class="teamcards-content-text">Marketing</p>
@@ -260,7 +266,8 @@
             </div>
           </li>
           <li class="teamcards-content-item">
-            <img class="teamcards-img" src="./images/img_tc4.jpg" alt="DW picture" width="264" height="260" />
+            <img class="teamcards-img" srcset="./images/img_tc4.jpg 1x, ./images/img_tc4@2x.jpg 2x"
+              src="./images/img_tc4.jpg" alt="DW picture" width="264" height="260" loading="lazy" />
             <div class="teamcards-content-block">
               <h3 class="teamcards-content-title">Daniel Wilson</h3>
               <p class="teamcards-content-text">UI Designer</p>
@@ -530,6 +537,28 @@
       </ul>
     </div>
   </div>
+
+
+  <!--RETINA Sample Desktop screen --
+      <picture>
+    <source media="(min-width: 1200px)" srcset="
+      ./images/products/img-1_desk.png    1x,
+      ./images/products/img-1_desk@2x.png 2x
+    " />
+    !-- Tablet screen --
+    <source media="(min-width: 768px)" srcset="
+		./images/products/img-1_tab.png    1x,
+		./images/products/img-1_tab@2x.png 2x
+		" />
+    !-- Mobile screen --
+    <source media="(max-width: 767px)" srcset="
+		./images/products/img-1_mob.png    1x,
+		./images/products/img-1_mob@2x.png 2x
+		" />
+    <img class="products-ill" src="./images/products/img-1_mob.png" alt="Dark" width="230" height="201"
+      loading="lazy" />
+  </picture> -->
+
 
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
