@@ -332,29 +332,20 @@ input {
 .hero {
   padding: 112px 0;
   background-color: var(--hero-bg-cl);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-people-office_mob.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/bg-people-office@2x.jpg);
-  }
-}
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/bg-people-office_mob.jpg);
   }
 }
 
-@media only screen and (min-device-pixel-ratio: 2),
+@media only screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero {
@@ -363,7 +354,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 1168px) {
+@media only screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/bg-people-office_tab.jpg);
@@ -479,12 +470,13 @@ input {
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .features-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
 }
 
@@ -612,7 +604,7 @@ input {
 **/
 
 .teamcards {
-  padding: 96px 0 56px;
+  padding: 96px 0;
   background-color: var(--light-bg-cl);
 }
 
@@ -636,7 +628,6 @@ input {
 .teamcards-content-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   align-items: center;
   justify-content: center;
   gap: 72px;
@@ -644,9 +635,7 @@ input {
 
 @media only screen and (min-width: 768px) {
   .teamcards-content-list {
-    display: flex;
-    margin: 0;
-    gap: 24px;
+    gap: 64px 24px;
   }
 }
 
@@ -657,12 +646,6 @@ input {
   flex-basis: calc((100% - 24px * 3) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
-  .teamcards-content-item {
-    margin-bottom: 40px;
-  }
 }
 
 .teamcards-img,
@@ -737,14 +720,9 @@ input {
 **/
 
 .customers {
-  padding: 96px 0 24px;
+  padding: 96px 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
-  .customers {
-    padding: 96px 0 48px;
-  }
-}
 
 @media only screen and (min-width: 1158px) {
   .customers {
@@ -756,12 +734,12 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 72px 16px;
 }
 
 @media only screen and (min-width: 768px) {
   .customers-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
 }
 
@@ -771,9 +749,9 @@ input {
   width: calc((100% - 16px * 1) / 2);
 }
 
-.customers-item:not(:last-child) {
+/* .customers-item:not(:last-child) {
   margin-bottom: 56px;
-}
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .customers-item {
@@ -782,11 +760,11 @@ input {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+/* @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .customers-item:not(:last-child) {
     margin-bottom: 48px;
   }
-}
+} */
 
 @media only screen and (min-width: 1158px) {
   .customers-item:not(:last-child) {
@@ -836,9 +814,9 @@ input {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
-  .footer {
-    padding: 96px 0 96px 108px;
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .footer-container {
+    width: 584px;
   }
 }
 
@@ -859,8 +837,6 @@ input {
   .footer-container {
     flex-direction: row;
     align-items: baseline;
-
-    /* max-height: 312px; DESK footer height*/
   }
 }
 
@@ -1005,14 +981,13 @@ input {
 
 @media only screen and (min-width: 768px) {
   .footer-form {
-
     flex-direction: row;
     gap: 24px;
   }
 }
 
 .footer-form-input {
-  width: 398px;
+  min-width: 264px;
   height: 40px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -1073,7 +1048,7 @@ input {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
+  width: 320px;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
   border-radius: 4px;
@@ -1081,6 +1056,12 @@ input {
   background-color: var(--dairy-bg-cl);
   transform: translateX(-50%) translateY(-50%) scale(1);
   transition: transform var(--trns-fast);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
 }
 
 .modal-window.is-hidden .modal {
@@ -1386,7 +1367,7 @@ input[type='checkbox']:focus-visible+.acception-line .modal-form-checkbox {
   max-width: 428px;
   height: 100%;
   max-height: 796px;
-  padding: 80px 0 40px 40px;
+  padding: 80px 35px 40px 40px;
   background: var(--main-bg-cl);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
@@ -1449,6 +1430,11 @@ input[type='checkbox']:focus-visible+.acception-line .modal-form-checkbox {
   letter-spacing: var(--main-lt-space);
 }
 
+.mobile-menu-refs-item.studio,
+.mobile-menu-tel-link {
+  color: var(--pressed-bg-cl);
+}
+
 .mobile-menu-refs-link:hover,
 .mobile-menu-tel-link:hover,
 .mobile-menu-email-link:hover,
@@ -1472,8 +1458,7 @@ input[type='checkbox']:focus-visible+.acception-line .modal-form-checkbox {
 
 .mobile-menu-socials {
   display: flex;
-  align-items: center;
-  gap: 54px;
+  justify-content: space-around;
 }
 
 .mobile-menu-socials-link:hover,
