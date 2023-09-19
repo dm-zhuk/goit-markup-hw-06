@@ -332,17 +332,10 @@ input {
 .hero {
   padding: 112px 0;
   background-color: var(--hero-bg-cl);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-people-office_mob.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg_mob.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-@media only screen and (max-width: 767.98px) {
-  .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/bg-people-office_mob.jpg);
-  }
 }
 
 @media only screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2),
@@ -350,14 +343,14 @@ input {
 (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/bg-people-office_mob@2x.jpg);
+      url(../images/dark-bg_mob@2x.jpg);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/bg-people-office_tab.jpg);
+      url(../images/dark-bg_tab.jpg);
   }
 }
 
@@ -366,7 +359,7 @@ input {
 (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/bg-people-office_tab@2x.jpg);
+      url(../images/dark-bg_tab@2x.jpg);
   }
 }
 
@@ -1363,10 +1356,7 @@ input[type='checkbox']:focus-visible+.acception-line .modal-form-checkbox {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: 320px;
-  max-width: 428px;
   height: 100%;
-  max-height: 796px;
   padding: 80px 35px 40px 40px;
   background: var(--main-bg-cl);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
